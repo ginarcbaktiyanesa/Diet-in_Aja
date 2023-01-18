@@ -1,0 +1,149 @@
+/* Jumbotron
+.jumbotron{
+    background-image: url(img/bglog.jpg);
+    background-size: cover;
+    height: 810px;
+} */
+
+/* Background */
+.bg{
+    background-image: url(../img/signup.jpeg);
+    background-size: cover;
+    height: 900px;
+}
+
+.bg::after{
+    content: '';
+    display: block;
+    width: 70%;
+    height: 1000px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    margin-left: 15%;
+}
+
+/* Form Signup */
+.isiform{
+    margin-top: -820px;
+    margin-left: 22%;
+}
+
+.isiform .judul{
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    margin-left: 20%;
+}
+
+.isiform form{
+    margin-top: 60px;
+}
+
+.isiform label{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.isiform form .formulir{
+    width: 350px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.isiform .btn-primary{
+    background-color: dimgray;
+    border-color: dimgray;
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+}
+
+.btn-primary:hover{
+    background-color: #2f2f2f;
+}
+
+.isiform form span{
+    font-size: 20px;
+}
+
+.isiform button{
+    margin-top: 10px;
+    margin-left: 104px;
+}
+
+.isiform form .signuplink{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+    /* margin-right: 160px; */
+    margin-left: 70px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    .bg{
+        height: 1200px;
+    }
+
+    .bg::after{
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .isiform{
+        margin-top: -1140px;
+        margin-left: auto;
+        margin-right: -50px;
+    }
+
+    .isiform .judul{
+        text-align: center;
+        font-size: 55px;
+        font-weight: 200;
+        margin-right: 220px;
+    }
+
+    .isiform label{
+        font-size: 30px;
+        margin-left: 150px;
+    }
+
+    .isiform form .formulir{
+        width: 519px;
+        height: 80px;
+        border-radius: 40px;
+        margin-left: 150px;
+    }
+
+    .isiform .btn-primary{
+        background-color: black;
+        border-color: black;
+        width: 150px;
+        height: 60px;
+    }
+
+    .btn-primary:hover{
+        background-color: #2f2f2f;
+    }
+
+    .isiform form span{
+        font-size: 30px;
+    }
+
+    
+    .isiform button{
+        margin-left: 330px;
+    }
+
+    .isiform form .signuplink{
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-right: 90px;
+    }
+}
